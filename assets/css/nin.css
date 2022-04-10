@@ -1,0 +1,54 @@
+.svg1nin{
+    height: 99vh;
+}
+
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .svg1nin{
+        height: 99vh;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .svg1nin{
+        height: 50vh;
+    }
+    .svg-lego-blockchain-animation__container{
+        height: 500px;
+    }
+    .svg-lego-blockchain-animation__container .blocks-container{
+        margin-left: calc(-180.5px);
+    }
+}
+@media screen and (min-width:425px) and (max-width:768px){
+    .svg1nin{
+        height: 30vh;
+    }
+    .svg-lego-blockchain-animation__container{
+        height: 300px;
+    }
+    .svg-lego-blockchain-animation__container .blocks-container{
+        margin-left: calc(-120.5px);
+    }
+    .block-data{
+        font-size: 13px;
+        width: 127px;
+        border-radius: 20px;
+    }
+}
+@media screen and (min-width:315px) and (max-width:425px){
+    .svg1nin{
+        height: 20vh;
+    }
+    .svg-lego-blockchain-animation__container{
+        height: 300px;
+    }
+    .svg-lego-blockchain-animation__container .blocks-container{
+        margin-left: calc(-100.5px);
+    }
+    .block-data{
+        font-size: 13px;
+        width: 90px;
+        padding: 5px 5px;
+        border-radius: 20px;
+    }
+}

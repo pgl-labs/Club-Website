@@ -1,0 +1,114 @@
+.small_progress { 
+	min-height:50px;
+}
+.small_progress .progress,.small_progress .progress .box,.small_progress .progress .progress-overlay {height: 2rem}
+.small_progress .progress{
+  background: #b8b8b8; 	
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), transparent 60%);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 6px #b6babe, 0 7px rgba(255, 255, 255, 0.1);
+  border: 1px solid #8a0a9a;
+  border-radius: 50px;
+  z-index:1;
+  overflow:hidden;
+  margin: 10px 0px;
+}
+.small_progress .progress-bar{z-index:2;    background-size: 2rem 2rem;}
+@keyframes progress-bar-stripes {
+	from {
+		background-position: 2rem 0
+	}
+	to {
+		background-position: 0 0
+	}
+}
+
+.small_progress  .progress .progress-overlay {
+    background: #464444;
+    width: 0%;
+    opacity: 0.1;
+	transition:all 0.8s;
+	border-radius:50px;
+	position:absolute;
+	z-index:0;
+}
+.small_progress .progress .box-container{position:absolute;z-index:3;width:100%}
+.small_progress .progress .box {
+    display: block;
+    padding: 5px 0px;
+    text-align: center;
+    margin-left: -2px;
+    position: relative;
+    float: left;
+}
+.small_progress .progress .box .other{position: absolute;top: 0;right: 0;left: 0px;bottom: 0;margin: -8% auto; margin-top: -16%;}
+.small_progress .progress .box .cap {
+    position: absolute;
+    top: 0;
+    right: 13px;
+    margin-top: -10px;
+    font-size: 10px;
+    opacity: 0;
+    transform: rotate(0deg);
+    transition: all 1s ease;
+}
+.small_progress .progress .box .cap:after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 20px;
+    background: #eaeae9b3;
+    margin: 0 auto;
+}
+.small_progress .progress .box p{font-size:13px;margin:0px;color:#fff; margin-top: 0px;}
+.small_progress .progress .box p.first{margin-bottom:15px;}
+.small_progress .progress .box p.icon:before {
+    content: '';
+    width: 31px;
+    height: 33px;
+    display: inline-block;
+    font-size: 10px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: top;
+    vertical-align: middle;
+    margin-right: 2%;
+}
+.small_progress .progress .box p.btc:before {
+    background-image: url("/images/btc.png") !important;
+}
+.small_progress .progress .box p.btcc:before {
+    background-image: url("/images/btcc.png") !important;
+}
+.small_progress .progress .box p.eth:before {
+    background-image: url("/images/ether.png") !important;
+}
+.small_progress .progress .box.first{width:30%}
+.small_progress .progress .box.second{width:35%;border:1px  solid #848488;border-bottom:0px; border-top:0px}
+.small_progress .progress .box.third{width:35%}
+.small_progress img.plane {
+    position: absolute;
+    height: 40px;
+    left: 0;
+    width: auto !important;
+    margin-top: -45px;
+}
+.token_progress *{
+    color: #fbf7f7 !important;
+}
+.token_progress .small_progress{
+    margin-top:100px;
+}
+.token_progress .small_progress .progress .box .cap:after {
+    background: #ababab;
+}
+@media (max-width:768px){
+  .token_progress{
+      min-height:200px;
+  }    
+  .token_progress .small_progress{
+    margin-top:0px;
+  }  
+  .small_progress .progress .box .other{
+          margin-top: -22%;
+  }
+}

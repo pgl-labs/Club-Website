@@ -1,0 +1,144 @@
+.investor_profit{
+    background:#55025f;
+    padding: 100px 0px;
+}
+.investor_profit .section_heading{
+    text-align:center;
+    font-size: 35px;
+    color:#fbfbfb;
+}
+.investor_profit span.userCircle {
+    position: absolute;
+    bottom: 0;
+    border: 1px solid #9be446;
+    padding: 0px 10px;
+    left: -29px;
+    border-radius: 5px;
+    color: #14a514;
+    font-weight:bold;
+}
+
+.investor_profit .box p{font-size:14px;color:#cafbd7;margin-bottom:20px;}
+.investor_profit .box p span{font-size:30px;display:block;color:#e6b9e9;line-height:25px;font-weight:400;}
+.investor_profit .slidecontainer {
+  width: 100%;
+  color:#333;
+  position:relative;
+  margin-top: 70px;
+}
+.investor_profit .slidecontainer .calculator_data{
+	margin:20px 0px;
+}
+.investor_profit .slidecontainer .calculator_data .data_row:first-child:after{
+	content:'';
+	position:absolute;
+	top:-7px;
+	left:-12px;
+	height:12px;
+	width:12px;
+	border-radius:50%;
+	background:#e03fe0;
+}
+.investor_profit .slidecontainer .calculator_data .data_row:last-child:after{
+	content:'';
+	position:absolute;
+	top:-7px;
+	right:0px;
+	height:12px;
+	width:12px;
+	border-radius:50%;
+	background:#e03fe0;
+}
+.investor_profit .slidecontainer .calculator_data .data_row{
+    color: #fcfcfc;
+    display: inline-block;
+    text-align: left;
+    margin-left:-4px;
+	text-align:center;
+	border-top:2px solid #EB91F2;
+	position:relative
+}
+.investor_profit .slidecontainer .calculator_data .data_row:before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    border:2px solid #EFA7DD;
+	background:#efecec;
+    display: block;
+    margin: -17px auto 8px auto;
+    border-radius: 50%;
+	transition:all 1s;
+}
+.investor_profit .slidecontainer .calculator_data .data_row.active:before{
+    content: "\f00c";
+    width: 30px;
+    height: 30px;
+	background: #862282;
+    display: block;
+    margin: -17px auto 8px auto;
+    border-radius: 50%;
+	font-family:FontAwesome;
+	color:#fff;
+	box-shadow: 0px 0px 33px #EF10CD;
+}
+.investor_profit .slidecontainer .calculator_data .data_row span.profit{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	margin-top:-50px;
+}
+.investor_profit .form_calculator{
+	background: linear-gradient(to top left,#7e1f80,#050f48);
+    padding: 20px;
+    border-radius: 10px;
+    border: 6px solid #e03fe0;
+}
+.investor_profit .form_calculator .input-group-text{
+	padding:17px
+}
+.investor_profit .form_calculator p{
+	margin:0px
+}
+.investor_profit .form_calculator p.lbl{
+	font-size:14px;
+}
+
+@media (max-width:768px){
+	.investor_profit .slidecontainer .calculator_data .data_row:first-child:after,
+	.investor_profit .slidecontainer .calculator_data .data_row:last-child:after{
+		display:none
+	}
+	.investor_profit .slidecontainer {
+    margin-top: 0px;
+}
+	.investor_profit span.userCircle {
+        position: relative; 
+        bottom: auto; 
+        top: 0;
+        left:0;
+        font-size: 10px;
+    }
+}
+    
+    @media (min-width:740px) and (max-width:1024px){
+    .investor_profit .box p, .netp{
+            text-align:left;
+            text-align: center;
+            display: inline-block;
+            padding-right: 10px;
+            line-height: 40px;
+        }
+    .peaky-slider .item{
+       max-height: 449px;
+       
+   }
+   
+   .peaky-slider .item p{
+       margin-bottom: 0px
+   }
+   
+   .features-box-s3{
+       height:84%;
+   }
+}
